@@ -1,0 +1,43 @@
+@charset "UTF-8";
+body{
+	background-color: #CAFFFF;
+}
+#login{
+	width:1000px;
+	margin:0 auto;
+}
+#login p{
+	text-align:center;
+}
+.t1{
+	font-family: "微软雅黑";
+	font-size: 45px;
+	letter-spacing: 7px;
+	}
+.textbox{
+	width:350px;
+	height:40px;
+	border:1px solid #e2b709;
+	border-radius:4px;
+	padding-left:10px;
+}
+.submit{
+	width:360px;
+	height:40px;
+	background-color:#F0184d;
+	color:white;
+	border:1px solid #666666;
+}
+.button{
+	width:360px;
+	height:40px;
+	padding-left:10px;
+	background-color:white;
+	border:1px solid #666666;
+}
+.text{
+	width:360px;
+	margin:0 auto;
+	font-size:15px;
+	color:#666666;
+}

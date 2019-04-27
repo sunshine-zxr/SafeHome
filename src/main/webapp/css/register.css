@@ -1,0 +1,26 @@
+@charset "UTF-8";
+body{
+	background-color: #CAFFFF;
+}
+#register{
+	width:1000px;
+	margin-top: 100px;
+	margin-left: 150px;
+}
+#register p{
+	text-align:center;
+}
+.textbox{
+	width:350px;
+	height:40px;
+	border:1px solid #e2b709;
+	border-radius:4px;
+	padding-left:10px;
+}
+.submit{
+	width:360px;
+	height:40px;
+	background-color:#F0184d;
+	color:white;
+	border:1px solid #666666;
+}

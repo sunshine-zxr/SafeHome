@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	<!-- 指和映射文件配对的接口 -->
+	<mapper namespace="com.bishe.safehome.dao.HomeDataDao">
+		<!-- id匹配接口中方法名，parameterType匹配接口中方法的参数 -->
+		<select id="findHomeDataByDate" parameterType="java.sql.Timestamp" resultType="com.bishe.safehome.bean.HomeData">
+			select * from homedb
+			where date=#{date}
+		</select>
+		<resultMap type="com.bishe.safehome.bean.HomeData" id="homelist">
+			<id property="id" column="id"></id>
+			<result property="hum" column="hum"/>
+			<result property="tem" column="tem"/>
+			<result property="smoke" column="smoke"/>
+			<result property="door" column="door"/>
+			<result property="date" column="date"/>
+		</resultMap>
+		<select id="findAllHomeData" resultMap="homelist">
+			select * from homedb;
+		</select>
+	</mapper>
